@@ -30,8 +30,10 @@ export class InterceptorTokenService implements HttpInterceptor {
 
   manejarError( error: HttpErrorResponse){
     console.log('Sucedio un error');
+    console.log('Sucedio un error'); // prueba fork
     console.log('Registro en el log file');
     console.warn(error);
+    console.warn(error); // prueba fork
     return throwError('Error personalizado');
   }
 }
